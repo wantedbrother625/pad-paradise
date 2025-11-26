@@ -31,7 +31,7 @@ export const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
           <p className="text-sm text-muted-foreground mt-1">{product.description}</p>
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-primary">${product.price}</span>
+          <span className="text-2xl font-bold text-primary">₨{product.price.toLocaleString()}</span>
           <Button
             size="sm"
             onClick={() => onAddToCart(product)}

@@ -44,7 +44,7 @@ export const Cart = ({ isOpen, onClose, items, onUpdateQuantity, onRemove }: Car
                     <div className="flex justify-between items-start">
                       <div>
                         <h4 className="font-semibold text-foreground">{item.name}</h4>
-                        <p className="text-sm text-primary font-bold">${item.price}</p>
+                        <p className="text-sm text-primary font-bold">₨{item.price.toLocaleString()}</p>
                       </div>
                       <Button
                         variant="ghost"
@@ -83,7 +83,7 @@ export const Cart = ({ isOpen, onClose, items, onUpdateQuantity, onRemove }: Car
             <div className="border-t border-border pt-4 mt-4 space-y-4">
               <div className="flex justify-between items-center text-xl font-bold">
                 <span>Total:</span>
-                <span className="text-primary">${total.toFixed(2)}</span>
+                <span className="text-primary">₨{total.toLocaleString()}</span>
               </div>
               <Button className="w-full bg-gradient-primary hover:opacity-90 shadow-glow" size="lg">
                 Checkout
