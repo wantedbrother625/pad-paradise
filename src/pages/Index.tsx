@@ -3,48 +3,54 @@ import { Header } from "@/components/Header";
 import { ProductCard, Product } from "@/components/ProductCard";
 import { Cart, CartItem } from "@/components/Cart";
 import { useToast } from "@/hooks/use-toast";
+import mousepad1 from "@/assets/mousepad-1.jpg";
+import mousepad2 from "@/assets/mousepad-2.jpg";
+import mousepad3 from "@/assets/mousepad-3.jpg";
+import mousepad4 from "@/assets/mousepad-4.jpg";
+import mousepad5 from "@/assets/mousepad-5.jpg";
+import mousepad6 from "@/assets/mousepad-6.jpg";
 
 const PRODUCTS: Product[] = [
   {
     id: 1,
     name: "RGB Gaming Pad",
-    price: 29.99,
-    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500&h=500&fit=crop",
+    price: 3499,
+    image: mousepad1,
     description: "Premium RGB mousepad with smooth glide surface",
   },
   {
     id: 2,
     name: "XL Desk Mat",
-    price: 39.99,
-    image: "https://images.unsplash.com/photo-1625252252804-c8110ee3d906?w=500&h=500&fit=crop",
+    price: 4499,
+    image: mousepad2,
     description: "Extended gaming mouse pad for full desk coverage",
   },
   {
     id: 3,
     name: "Speed Edition",
-    price: 24.99,
-    image: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=500&h=500&fit=crop",
+    price: 2999,
+    image: mousepad3,
     description: "Ultra-smooth surface for maximum speed",
   },
   {
     id: 4,
     name: "Control Pro",
-    price: 27.99,
-    image: "https://images.unsplash.com/photo-1593640495253-23196b27a87f?w=500&h=500&fit=crop",
+    price: 3299,
+    image: mousepad4,
     description: "Textured surface for precise control",
   },
   {
     id: 5,
     name: "Wireless Charging Pad",
-    price: 49.99,
-    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop",
+    price: 5499,
+    image: mousepad5,
     description: "Mouse pad with built-in wireless charging",
   },
   {
     id: 6,
     name: "Minimalist Leather",
-    price: 34.99,
-    image: "https://images.unsplash.com/photo-1600087626014-e652e18bbff2?w=500&h=500&fit=crop",
+    price: 3999,
+    image: mousepad6,
     description: "Premium leather desk mat for professionals",
   },
 ];
